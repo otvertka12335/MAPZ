@@ -9,8 +9,8 @@ public class Main {
         reportNotifier.setNextNotifier(emailNotifier);
         emailNotifier.setNextNotifier(smsNotifier);
 
-        reportNotifier.notifyUser("Chota tam sly4ilos", Priority.IMPORTANT);
+        reportNotifier.notifyUser("Your session will begin in 2 hours", Priority.IMPORTANT);
 
-        reportNotifier.notifyUser("Chota", Priority.DANGER);
+        reportNotifier.notifyUser("Your session will begin in 30 minutes", Priority.DANGER);
     }
 }
